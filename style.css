@@ -26,14 +26,10 @@ a {
 body {
   background-color: var(--white);
   font-family: 'Londrina Solid', cursive;
-}
-
-/* HEADER */
-
-header {
   text-transform: uppercase;
 }
 
+/* HEADER */
 ul {
   color: var(--blue);
   text-align: center;
@@ -58,6 +54,7 @@ li {
 }
 
 .liens_nav {
+  color: var(--blue);
   font-size: 1em;
   display: flex;
   flex-direction: column;
@@ -80,8 +77,8 @@ h1 {
 }
 
 .flex_en_savoir_plus {
+  margin: 0 0 4em;
   color: var(--white);
-  text-transform: uppercase;
   background-color: var(--pink);
   display: flex;
   align-items: center;
@@ -98,6 +95,33 @@ h1 {
   color: var(--black);
   background-color: var(--cyan);
   padding: 1.5em;
+}
+
+main {
+  margin: 3em 10%;
+}
+
+.section_robots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.border_dashed {
+  color: var(--blue);
+  text-align: center;
+  border: 2px dashed var(--cyan);
+  border-bottom: none;
+  padding: 2em;
+}
+
+.titre_robots {
+  color: var(--pink);
+}
+
+data {
+  color: var(--cyan);
 }
 
 @media screen and (min-width: 1024px) {
