@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400&display=swap');
 
 * {
   margin: 0;
@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
+
 body {
   background-color: var(--white);
   font-family: 'Londrina Solid', cursive;
@@ -30,7 +34,7 @@ body {
 }
 
 /* HEADER */
-ul {
+.ul_header {
   color: var(--blue);
   text-align: center;
   display: flex;
@@ -44,11 +48,11 @@ ul {
   width: 4em;
 }
 
-li {
+.li_header {
   margin: 2em;
 }
 
-.img_robots {
+.img_robots_nav {
   margin-bottom: 0.3em;
   width: 2em;
 }
@@ -79,11 +83,13 @@ h1 {
 .flex_en_savoir_plus {
   margin: 0 0 4em;
   color: var(--white);
+  font-weight: 100;
   background-color: var(--pink);
   display: flex;
   align-items: center;
 }
 
+/* EN SAVOIR PLUS */
 .en_savoir_plus {
   margin-left: 3em;
   font-size: 1.2em;
@@ -97,15 +103,15 @@ h1 {
   padding: 1.5em;
 }
 
+/* MAIN */
 main {
   margin: 3em 10%;
 }
 
-.section_robots {
+.flex_section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .border_dashed {
@@ -117,20 +123,89 @@ main {
 }
 
 .titre_robots {
+  margin: 2em 0;
   color: var(--pink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-data {
+.img_robots_pink {
+  margin-bottom: 0.3em;
+  width: 3em;
+}
+
+.titre {
+  font-size: 1em;
+}
+
+time {
+  margin-top: 1em;
   color: var(--cyan);
+  font-size: 2em;
+  text-align: center;
+}
+
+.description {
+  margin: 3em 0;
+  color: var(--blue);
+}
+
+.description_center {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 2em;
+  text-align: center;
+}
+
+.ul_footer {
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.li_footer {
+  margin: 2em 5%;
+}
+
+.eden_school {
+  width: 5em;
+}
+
+h5 {
+  margin: 1em 0;
+}
+
+.txt_eden_school {
+  font-size: 0.5em;
+}
+
+/* AUTRES INDEX */
+.images {
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
-  ul {
+  .ul_header {
     flex-direction: row;
     gap: 0 4vw;
   }
 
   .logo {
     margin: 0 0 0 2em;
+  }
+
+  .flex_section {
+    flex-direction: row;
+  }
+
+  article {
+    margin: auto;
   }
 }
