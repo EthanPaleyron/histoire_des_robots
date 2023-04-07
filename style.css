@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400&display=swap');
 
 * {
   margin: 0;
@@ -30,6 +30,7 @@ button {
 body {
   background-color: var(--white);
   font-family: 'Londrina Solid', cursive;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -65,6 +66,10 @@ body {
   align-items: center;
 }
 
+.liens_nav_active {
+  color: var(--pink);
+}
+
 .fond_header {
   color: var(--white);
   text-align: center;
@@ -93,6 +98,7 @@ h1 {
 .en_savoir_plus {
   margin-left: 3em;
   font-size: 1.2em;
+  font-weight: lighter;
   width: 100%;
   padding: 0.5em;
 }
@@ -149,10 +155,50 @@ time {
 .description {
   margin: 3em 0;
   color: var(--blue);
+  font-weight: 100;
 }
 
 .description_center {
   text-align: center;
+}
+
+/* ACHATS */
+.article_achats {
+  margin: 1em auto;
+  border: 2px dotted var(--cyan);
+  padding: 1em;
+}
+
+.titre_achats {
+  margin-bottom: 0.5em;
+  color: var(--white);
+  font-size: 1.1em;
+  text-align: center;
+  background-color: var(--cyan);
+  padding: 1.5em;
+}
+
+.ul_achats {
+  margin-left: 1em;
+  color: var(--blue);
+  font-weight: 100;
+  list-style: circle;
+  line-height: 1.8em;
+}
+
+strong {
+  margin: 1em 0;
+  color: var(--blue);
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+}
+
+.commander {
+  color: var(--white);
+  background-color: var(--pink);
+  height: 3em;
+  width: 100%;
 }
 
 /* FOOTER */
@@ -164,14 +210,15 @@ footer {
 }
 
 .ul_footer {
-  font-size: 0.7em;
+  font-size: 1em;
+  font-weight: 100;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .li_footer {
-  margin: 2em 5%;
+  margin: 2em 2%;
 }
 
 .eden_school {
@@ -183,11 +230,51 @@ h5 {
 }
 
 .txt_eden_school {
-  font-size: 0.5em;
+  font-weight: 100;
+  font-size: 0.8em;
 }
 
 /* AUTRES INDEX */
-.images {
+
+.images_video {
+  margin: 1em 0 0;
+  width: 100%;
+}
+
+.postion_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  border: 1px dotted var(--pink);
+  width: 100%;
+}
+
+.mail_tel_facebook {
+  margin-top: 0.5em;
+  color: var(--blue);
+  text-align: center;
+}
+
+.link_contact {
+  color: var(--pink);
+  font-weight: 100;
+}
+
+.img_contacts {
+  margin: 1em 0 0.4em;
+  width: 2em;
+}
+
+.maps {
   width: 100%;
 }
 
@@ -203,9 +290,14 @@ h5 {
 
   .flex_section {
     flex-direction: row;
+    gap: 2em;
   }
 
   article {
     margin: auto;
+  }
+
+  .video {
+    height: 30em;
   }
 }
