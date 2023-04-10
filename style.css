@@ -241,25 +241,25 @@ h5 {
   width: 100%;
 }
 
-.postion_contact {
+.position_contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 0 80%;
 }
 
 hr {
+  margin: 0.6em 0 1.5em;
   border: 1px dotted var(--pink);
   width: 100%;
 }
 
 .mail_tel_facebook {
-  margin-top: 0.5em;
   color: var(--blue);
   text-align: center;
 }
@@ -270,8 +270,13 @@ hr {
 }
 
 .img_contacts {
-  margin: 1em 0 0.4em;
+  margin-top: 1em;
   width: 2em;
+}
+
+.facebook {
+  display: flex;
+  flex-direction: column;
 }
 
 .maps {
@@ -299,5 +304,18 @@ hr {
 
   .video {
     height: 30em;
+  }
+
+  .contacts {
+    width: 20%;
+  }
+
+  hr {
+    width: 130%;
+  }
+
+  .position_contact {
+    display: flex;
+    flex-direction: row;
   }
 }
